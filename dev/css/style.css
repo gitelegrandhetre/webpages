@@ -10,6 +10,11 @@
   100% { opacity: 100%; }
 }
 
+/* FONTAWESOME *********************************************************************************/
+i.fa-solid, i.fa-regular {
+  font-family: 'Font Awesome 5 Free' !important;
+}
+
 /* HTML, BODY *********************************************************************************/
 
 html, body {
@@ -23,10 +28,14 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Open Sans";
+  font-family: "Merriweather";
   font-weight: 300;
   color: #444;
 }
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; font-weight: 400;}
+h3 { font-size: 2rem; border-bottom: 1px solid #aaa;}
 
 /* WRAPPER *********************************************************************************/
 
@@ -36,6 +45,13 @@ h1, h2, h3, h4 {
 
 #content {
   background: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* This fixes the padding 0px on #content (every top-level row has a negative margin */
+#content .row {
+  margin-right: 0px;
 }
 
 /* HEADER *********************************************************************************/
@@ -55,7 +71,7 @@ h1, h2, h3, h4 {
 /* CAROUSEL *********************************************************************************/
 
 /* change transition duration to control the speed of fade effect */
-.carousel-item {
+.slider {
   transition: transform 2.6s ease-in-out;
 }
 
@@ -64,7 +80,7 @@ h1, h2, h3, h4 {
   transition: opacity 0s 2.6s;
 }
 
-.carousel-inner {
+#mainCarousel .carousel-inner {
   animation: fadeIn 2s;
 }
 
@@ -245,7 +261,7 @@ h1, h2, h3, h4 {
   100% { right: 0px;    opacity: 100%; }
 }
 
-/* ROOM CARDS *********************************************************************************/
+/* DESCRIPTION *********************************************************************************/
 
 #description, #description * {
   font-family: "Merriweather";
@@ -255,6 +271,7 @@ h1, h2, h3, h4 {
   font-size: 1.1rem;
 }
 
+/* ROOM CARDS *********************************************************************************/
 
 .card {
   border: none !important;
@@ -264,9 +281,12 @@ h1, h2, h3, h4 {
   border-radius: 0px;
 }
 
+#rooms .card-body * {
+  font-family: "Merriweather";
+}
+
 #rooms .card-body h1 {
   font-size: 1.67rem;
-  font-family: "Open Sans";
   font-weight: 400;
   color: #444;
 }
