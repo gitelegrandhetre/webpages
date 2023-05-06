@@ -9,6 +9,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -266,14 +267,14 @@
 
         <div id="gallery" class="row ms-1 me-1 justify-content-center">
           <div class="card col-md-4 col-sm-6">
-            <a href="images/chambre-1.jpg" class="photo" data-gallery="example-gallery" data-caption="Chambre 1">
+            <a href="images/chambre-1.jpg">
               <img src="images/chambre-1.jpg" class="card-img-top img-fluid">
             </a>
             <div class="card-body">Chambre 1</div>
           </div>
 
           <div class="card col-md-4 col-sm-6">
-            <a href="images/chambre-1-sdb.jpg" class="photo" data-gallery="example-gallery" data-caption="Chambre 1">
+            <a href="images/chambre-1-sdb.jpg">
               <img src="images/chambre-1-sdb.jpg" class="card-img-top img-fluid">
             </a>
             <div class="card-body">Chambre 1</div>
@@ -281,26 +282,58 @@
         </div>
       </div>
     </div>
+
+    <!-- The Gallery as lightbox dialog, should be a document body child element -->
+    <div
+      id="blueimp-gallery"
+      class="blueimp-gallery"
+      aria-label="image gallery"
+      aria-modal="true"
+      role="dialog"
+      >
+      <div class="slides" aria-live="polite"></div>
+      <h3 class="title"></h3>
+      <a
+        class="prev"
+        aria-controls="blueimp-gallery"
+        aria-label="previous slide"
+        aria-keyshortcuts="ArrowLeft"
+        ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-gallery"
+        aria-label="next slide"
+        aria-keyshortcuts="ArrowRight"
+        ></a>
+      <a
+        class="close"
+        aria-controls="blueimp-gallery"
+        aria-label="close"
+        aria-keyshortcuts="Escape"
+        ></a>
+      <a
+        class="play-pause"
+        aria-controls="blueimp-gallery"
+        aria-label="play slideshow"
+        aria-keyshortcuts="Space"
+        aria-pressed="false"
+        role="button"
+        ></a>
+      <ol class="indicator"></ol>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      const options = {
-        keyboard: true,
-        size: 'fullscreen',
-        constrain: false
-      };
-
-      $('.photo').each(function() {
-        this.addEventListener('click', (e) => {
-          e.preventDefault();
-          const lightbox = new Lightbox(this, options);
-          lightbox.show();
-        })
-      })
-    })
+    document.getElementById('gallery').onclick = function (event) {
+      event = event || window.event
+      var target = event.target || event.srcElement
+      var link = target.src ? target.parentNode : target
+      var options = { index: link, event: event }
+      var links = this.getElementsByTagName('a')
+      blueimp.Gallery(links, options)
+    }
   </script>
 </html>
