@@ -264,16 +264,16 @@
           </div>
         </div>
 
-        <div id="room-cards" class="row ms-1 me-1 justify-content-center">
+        <div id="gallery" class="row ms-1 me-1 justify-content-center">
           <div class="card col-md-4 col-sm-6">
-            <a href="images/chambre-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Chambre 1">
+            <a href="images/chambre-1.jpg" class="photo" data-gallery="example-gallery" data-caption="Chambre 1">
               <img src="images/chambre-1.jpg" class="card-img-top img-fluid">
             </a>
             <div class="card-body">Chambre 1</div>
           </div>
 
           <div class="card col-md-4 col-sm-6">
-            <a href="images/chambre-1-sdb.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Chambre 1">
+            <a href="images/chambre-1-sdb.jpg" class="photo" data-gallery="example-gallery" data-caption="Chambre 1">
               <img src="images/chambre-1-sdb.jpg" class="card-img-top img-fluid">
             </a>
             <div class="card-body">Chambre 1</div>
@@ -282,7 +282,25 @@
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      const options = {
+        keyboard: true,
+        size: 'fullscreen',
+        constrain: false
+      };
+
+      $('.photo').each(function() {
+        this.addEventListener('click', (e) => {
+          e.preventDefault();
+          const lightbox = new Lightbox(this, options);
+          lightbox.show();
+        })
+      })
+    })
+  </script>
 </html>
