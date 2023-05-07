@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 #debug * {
   border: 1px solid black;
@@ -11,11 +12,12 @@
 }
 
 /* FONTAWESOME *********************************************************************************/
+
 i.fa-solid, i.fa-regular {
   font-family: 'Font Awesome 5 Free' !important;
 }
 
-/* HTML, BODY *********************************************************************************/
+/* HTML, BODY, GENERAL ************************************************************************/
 
 html, body {
   margin: 0px;
@@ -35,7 +37,17 @@ h1, h2, h3, h4 {
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; font-weight: 400;}
-h3 { font-size: 2rem; border-bottom: 1px solid #aaa;}
+h3 { font-size: 1.5rem; border-bottom: 1px solid #aaa;}
+
+li {
+  list-style-type: disc;
+}
+
+.airbnb {
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #ff385c;
+}
 
 /* WRAPPER *********************************************************************************/
 
@@ -261,14 +273,34 @@ h3 { font-size: 2rem; border-bottom: 1px solid #aaa;}
   100% { right: 0px;    opacity: 100%; }
 }
 
-/* DESCRIPTION *********************************************************************************/
+/* DESCRIPTION & DETAILS **********************************************************************/
 
-#description, #description * {
+#description, #description *,
+#details, #details * {
   font-family: "Merriweather";
 }
 
-#description {
+#description, #details {
   font-size: 1.1rem;
+}
+
+h1 {
+  text-align: center;
+}
+/* BOOKING ************************************************************************************/
+
+#booking {
+  background-color: #eee;
+}
+
+#booking h2 {
+  text-align: center;
+  font-weight: 300;
+}
+
+#booking .logo {
+  border-radius : 100px;
+  width: 10rem;
 }
 
 /* ROOM CARDS *********************************************************************************/
@@ -305,8 +337,15 @@ h3 { font-size: 2rem; border-bottom: 1px solid #aaa;}
   color: #fff;
   display: none;
   background: rgba(0,0,0,0.5);
+  display: block;
 }
 
-#blueimp-gallery .description {
-  display: block;
+/* FOOTER *********************************************************************************/
+
+#footer {
+  background: #e8e8e8;
+  line-height: 5rem;
+  text-align: center;
+  color: #888;
+  font-family: "Merriweather";
 }
