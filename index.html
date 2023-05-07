@@ -1,7 +1,601 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr-FR">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <title>Gîte Le Grand Hêtre</title>
+    <meta content="Gîte en Normandie" name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Gîte du Grand Hêtre</h1>
+    <div id="content" class="container">
+      <!-- HEADER-->
+      <div id="header" class="row justify-content-center align-items-center">
+        <div class="col-lg-auto text-center">
+          <a href="https://www.airbnb.fr/rooms/572317650683756933">
+            <img class="logo ms-4 mt-4 p-2 pb-4 " src="images/logo.png">
+          </a>
+        </div>
+        <div class="col d-none d-md-block">
+          <div class="row text-center justify-content-center me-1">
+            <div class=" col-sm-auto">11 personnes</div>
+            <div class="col-sm-auto">5 chambres</div>
+            <div class="col-sm-auto">piscine</div>
+            <div class="col-sm-auto">billard</div>
+            <div class="col-sm-auto">4 km de la mer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item slider slider-house active" data-bs-interval="10000">
+            <img src="images/slider-house.jpg" class="d-block w-100" alt="..." />
+            <div class="text text-1">BIENVENUE</div>
+            <div class="text text-2">GÎTE LE GRAND HÊTRE</div>
+          </div>
+          <div class="carousel-item slider slider-bedroom" data-bs-interval="10000">
+            <img src="images/slider-bedroom.jpg" class="d-block w-100" alt="..." />
+            <div class="text text-1">Grande Maison Confortable</div>
+            <div class="text text-2"> 5 chambres, 7 lits, 3 salles de bain<br>Jusqu'à 11 voyageurs
+            </div>
+          </div>
+          <div class="carousel-item slider slider-pool" data-bs-interval="10000">
+            <img src="images/slider-pool.jpg" class="d-block w-100" alt="..." />
+            <div class="text text-1">Profitez de</div>
+            <div class="text text-2">LA PISCINE</div>
+            <div class="text text-3">nagez dans le Bonheur</div>
+          </div>
+          <div class="carousel-item slider slider-kitchen" data-bs-interval="10000">
+            <img src="images/slider-kitchen.jpg" class="d-block w-100" alt="..." />
+            <div class="text text-1">Pratique & Convivial</div>
+          </div>
+          <div class="carousel-item slider slider-lounge" data-bs-interval="10000">
+            <img src="images/slider-lounge.jpg" class="d-block w-100" alt="..." />
+            <div class="text text-1">Créez des moments...</div>
+            <div class="text text-2">inoubliables !</div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div id="description">
+        <div class="row mt-3 ms-1 mb-1">
+          <div class="col">
+            <h1 class="p-3">Gîte Le Grand Hêtre</h1>
+            <p>Logement entier de 212 m<sup>2</sup> permettant d'accueillir 11 personnes, comprenant 5 chambres (quatre au second étage et une au premier), 7 lits et 3 salles de bain, 3 WC, une salle de billiard, une piscine exterieure chauffée d'Avril à Septembre.</p>
+            <p>Gîte situé à proximité de Caen, à 10km de Cabourg et à 4 km de la mer.</p>
+            <p>Ressourcez vous dans le jardin clos ou au bord de la piscine couverte chauffée durant la saison estivale, ou détendez-vous autour du billard ou en faisant une partie de pétanque. Vos enfants pourront profiter de la balançoire ou la table de ping-pong.</p>
+            <p>La maison est apaisante, les hôtes disent s'y sentir très bien au point qu'ils n'ont rechignent à rentrer chez eux. C'est le lieu idéal pour se retrouver entre amis ou en famille, car il y a de l'espace pour tout le monde.</p>
+            <p>À 400 mètres du gîte vous trouverez une épicerie qui vend des produits locaux de qualité issue du terroir. Ils préparent aussi des pizzas et font traiteur (plats préparé sur place). À coté de l'épicerie se trouve une boulangerie qui fait du très bon pain.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESERVATION -->
+      <div id="booking" class="pt-2 pb-2">
+        <div class="row mt-4 ms-1 mb-1 text-center">
+          <div class="col">
+            <h2>Réserver</h2>
+            <p class="pt-3 pb-1">
+              Veuillez utiliser sur le lien ci-dessous pour vous faire une réservation sur le site d'<span class="airbnb">airbnb</span> :
+            </p>
+            <div class="p-4 mb-2">
+              <a href="https://www.airbnb.fr/rooms/572317650683756933">
+                <img src="images/airbnb-logo.jpg" class="logo" alt="La page airbnb du Gîte Le Grand Hêtre">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROOMS -->
+      <div id="rooms">
+        <div id="room-cards" class="row mt-4 ms-1 me-1 justify-content-center">
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-1.jpg" class="photo lightbox">
+              <img src="images/thumbs/chambre-1.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h1>Chambre 1</h1>
+              <div class="row">
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit queen size</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> 2 occupants</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Salle de bain privée</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Premier étage</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Vue sur le parc</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Wifi</div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-2.jpg" class="photo lightbox">
+              <img src="images/thumbs/chambre-2.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h1>Chambre 2</h1>
+              <div class="row">
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit double</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> 2 occupants</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Salle de bain privée</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Premier étage</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Vue sur le parc</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Wifi</div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-3.jpg" class="photo lightbox">
+              <img src="images/thumbs/chambre-3.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h1>Chambre 3</h1>
+              <div class="row">
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit queen size</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> 2 occupants</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Salle de bain privée</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Premier étage</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Vue sur la piscine</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Wifi</div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-4.jpg" class="photo lightbox">
+              <img src="images/thumbs/chambre-4.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h1>Chambre 4</h1>
+              <div class="row">
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit double</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit simple</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> 2 occupants</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Salle de bain partagée</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Premier étage</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Vue sur le parking</div>
+              </div>
+              <div><i class="pe-2 fa-regular fa-square-check"></i> Wifi</div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-5.jpg" class="photo lightbox">
+              <img src="images/thumbs/chambre-5.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h1>Chambre 5</h1>
+              <div class="row">
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit queen size</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Lit simple</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> 3 occupants</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Salle de bain partagée</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Second étage</div>
+                <div class="col-6 col-sm-12"><i class="pe-2 fa-regular fa-square-check"></i> Vue sur le parc</div>
+              </div>
+              <div><i class="pe-2 fa-regular fa-square-check"></i> Wifi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETAILS -->
+      <div id="details">
+        <div class="row mt-3 ms-1 mb-1">
+          <div class="col">
+            <h3>Accès des voyageurs</h3>
+            <p>Les voyageurs ont accès à tout le parc côté piscine. La piscine chauffée leur est entièrement réservée.</p>
+
+            <h3>À l'Intérieur</h3>
+            <p>Au second étage, il y a 2 paliers de 2 chambres de chaque côté de l'escalier :</p>
+            <p>Sur premier palier :</p>
+            <ul>
+              <li>Une chambre pour trois avec un lit 140x190 et un lit 90x190 au dessus.</li>
+              <li>Une chambre pour deux avec un lit 160x200</li>
+              <li>Une salle de douche à partager</li>
+              <li>WC séparé</li>
+            </ul>
+
+            <p>Sur l'autre palier :</p>
+            <ul>
+              <li>Une chambre avec un lit en 160x200 et sa salle de douche</li>
+              <li>Un WC à partager</li>
+              <li>Une chambre avec des lits jumeaux 80x200 ou lit rapprochés 160x200 avec sa salle de douche.</li>
+            </ul>
+            <p>Au premier étage, il y a une chambre avec un lit 160x200 qui n'a ni salle de douche ni WC.</p>
+
+            <p>Au rez-dechaussée vous trouverez :<p>
+            <ul>
+              <li>Une grande cuisine dînatoire de 38 m<sup>2</sup> :
+                <ul>
+                  <li>Lave vaisselle et pastilles</li>
+                  <li>Lave linge et dosettes</li>
+                  <li>Sèche linge</li>
+                  <li>Réfrigérateur américain avec congélateur</li>
+                  <li>Plaque à induction et four</li>
+                  <li>Four micro-ondes</li>
+                  <li>Les torchons, sopalin, papier toilette et serviettes papier, sacs poubelles, éponge, produits ménagers sont fournis</li>
+                  <li>Une machine Nespresso et ses dosettes et machine à café normale, bouilloire électrique, grille pain</li>
+                </ul>
+              </li>
+              <li>Une salle de billard</li>
+              <li>Une salon avec TV connectée</li>
+            </ul>
+
+            <p>Le wifi (gratuit) est présent dans toutes les pièces.</p>
+
+            <h3>À l'Extérieur</h3>
+            <p>La propriété est entièrement close, l'entrée se fait par le portail électrique automatique.</p>
+            <p>À l'extérieur, vous trouverez :</p>
+            <p>Une grande piscine close avec sa barrière de sécurité, chauffée d'Avril à Septembre ainsi que des chaises longues.</p>
+            <p>Une salon de jardin auprès de la maison et un autre salon de jardin près de la piscine.</p>
+            <p>Un Barbecue boule.</p>
+            <p>Un terrain de pétanque avec les boules.</p>
+            <p>Une Balançoire</p>
+            <p>Table de ping-pong</p>
+
+            <h3>Le service</h3>
+            <p>Les lits sont faits, et sont fournis : le linge de toilette, les torchons, serviettes en papier, sopalin et papier toilette. Un sèche cheveux est présent dans chaque salle de douche, et une table et un fer à repasser sont à votre disposition.</p>
+            <p>Le parking permet d'accueillir jusqu'à 5 voitures, l'épicerie et la boulangerie sont à 400m.</p>
+
+            <h3>Restrictions</h3>
+
+            <div class="pb-1" style="font-size:1.4rem">
+            <i style="font-size:2rem; line-height: 2.4rem; vertical-align: middle; color:red" class="ms-3 me-2 fa-2xs fa-solid fa-ban-smoking"></i> Non fumeur<br>
+            <i style="font-size:2rem; line-height: 2.4rem; vertical-align: middle; color:red" class="ms-3 me-2 fa-2xs fa-solid fa-ban"></i> Pas de fêtes<br>
+            <i style="font-size:2rem; line-height: 2.4rem; vertical-align: middle; color:red" class="ms-3 me-2 fa-2xs fa-solid fa-ban"></i> Pas d'animaux<br>
+            </div>
+            <p>Nous tenons à garder l'ambiance familiale du Manoir. De ce fait, et pour préserver la tranquillité du quartier, <u>nous n'autorisons pas les fêtes</u>.</p>
+            <p>Une attestation assurance villégiature vous sera demandée.</p>
+
+            <h3>Ménage</h3>
+            <p>Le ménage doit être fait :</p>
+            <ul>
+              <li>L'aspirateur passé dans toutes les pieces,</li>
+              <li>Les poubelles vidées,</li>
+              <li>Le coin cuisine entièrement nettoyé (réfrigérateur, four micro-ondes, plaque induction, four, lave-vaisselle vidé, intérieurs de placards propres),</li>
+              <li>Les draps et serviettes posés en bas sur le sèche linge,</li>
+              <li>Les oreillers et couettes pliées sur chaque lit,</li>
+              <li>Les cendriers extérieurs vidés.</li>
+            </ul>
+            <p>Je me charge du nettoyage des salles de douche et WC.
+
+            <p>Vous avez la possibilité de refuser de faire le ménage, dans ce cas des frais de ménage de 200&euro; vous seront comptés en sus.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- GALERY -->
+      <div id="galery">
+        <div class="row mt-3 ms-1 mb-1">
+          <div class="col">
+            <h2>Galerie Photos</h2>
+          </div>
+        </div>
+
+        <div id="gallery" class="row ms-1 me-1 justify-content-center">
+          <!-- CHAMBRES -->
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-1.jpg" class="photo" data-description="Chambre 1">
+              <img src="images/thumbs/chambre-1.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Chambre 1</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-1-sdb.jpg" class="photo" data-description="Salle de bain de la chambre 1">
+              <img src="images/thumbs/chambre-1-sdb.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Salle de bain de la chambre 1</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-2.jpg" class="photo" data-description="Chambre 2">
+              <img src="images/thumbs/chambre-2.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Chambre 2</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-2-sdb.jpg" class="photo" data-description="Salle de bain de la chambre 2">
+              <img src="images/thumbs/chambre-2-sdb.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Salle de bain de la chambre 2</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-3.jpg" class="photo" data-description="Chambre 3">
+              <img src="images/thumbs/chambre-3.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Chambre 3</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-4.jpg" class="photo" data-description="Chambre 4">
+              <img src="images/thumbs/chambre-4.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Chambre 4</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/chambre-3-4-sdb.jpg" class="photo" data-description="Salle de bain des chambres 3 & 4">
+              <img src="images/thumbs/chambre-3-4-sdb.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Salle de bain des chambres 3 & 4</div>
+          </div>
+
+          <!-- PARTIES COMUNES -->
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/cuisine-1.jpg" class="photo" data-description="La cuisine">
+              <img src="images/thumbs/cuisine-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La cuisine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/cuisine-2.jpg" class="photo" data-description="La cuisine">
+              <img src="images/thumbs/cuisine-2.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La cuisine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/lounge-1.jpg" class="photo" data-description="Le salon">
+              <img src="images/thumbs/lounge-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Le salon</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/lounge-2.jpg" class="photo" data-description="Le salon">
+              <img src="images/thumbs/lounge-2.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Le salon</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/billiard.jpg" class="photo" data-description="La salle de billiard">
+              <img src="images/thumbs/billiard.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La cuisine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/entree-1.jpg" class="photo" data-description="Entrée">
+              <img src="images/thumbs/entree-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Entrée</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/entree-2.jpg" class="photo" data-description="Entrée">
+              <img src="images/thumbs/entree-2.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Entrée</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/palier-1.jpg" class="photo" data-description="Palier 1er étage">
+              <img src="images/thumbs/palier-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Palier 1er étage</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/palier-2.jpg" class="photo" data-description="Palier 2nd étage">
+              <img src="images/thumbs/palier-2.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Palier 2nd étage</div>
+          </div>
+
+          <!-- PISCINE -->
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/piscine-1.jpg" class="photo" data-description="La piscine couverte et chauffée">
+              <img src="images/thumbs/piscine-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La piscine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/piscine-2.jpg" class="photo" data-description="La piscine couverte et chauffée">
+              <img src="images/thumbs/piscine-2.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La piscine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/piscine-3.jpg" class="photo" data-description="La piscine couverte et chauffée">
+              <img src="images/thumbs/piscine-3.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La piscine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/piscine-4.jpg" class="photo" data-description="La piscine couverte et chauffée">
+              <img src="images/thumbs/piscine-4.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La piscine</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/piscine-5.jpg" class="photo" data-description="La piscine couverte et chauffée">
+              <img src="images/thumbs/piscine-5.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">La piscine</div>
+          </div>
+
+          <!-- EXTERIEURS -->
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-1.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-1.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-2.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-2.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-3.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-3.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-4.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-4.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-5.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-5.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-6.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-6.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-7.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-7.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-8.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-8.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-9.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-9.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-10.jpg" class="photo" data-description="Les extérieurs">
+              <img src="images/thumbs/outside-10.jpg" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Les extérieurs</div>
+          </div>
+
+          <div class="card col-md-4 col-sm-6">
+            <a href="images/outside-11.jpg" class="photo" data-description="Pétanque & balançoire">
+              <img src="images/thumbs/outside-11.png" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body text-center">Pétanque & balançoire</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- FOOTER -->
+      <div id="footer">
+        &copy; 2020-2023 Gîte Le Grand Hêtre &mdash; Tous droits réservés
+      </div>
+    </div>
+
+    <!-- The Gallery as lightbox dialog, should be a document body child element -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-contain" aria-label="image gallerie" aria-modal="true" role="dialog">
+      <div class="slides" aria-live="polite"></div>
+      <h3 class="title"></h3>
+      <p class="description"></p>
+      <a class="prev" aria-controls="blueimp-gallery" aria-label="photo précédente" aria-keyshortcuts="ArrowLeft"></a>
+      <a class="next" aria-controls="blueimp-gallery" aria-label="photo suivante" aria-keyshortcuts="ArrowRight"></a>
+      <a class="close" aria-controls="blueimp-gallery" aria-label="fermer" aria-keyshortcuts="Escape"></a>
+      <a class="play-pause" aria-controls="blueimp-gallery" aria-label="faire défiler" aria-keyshortcuts="Space" aria-pressed="false" role="button"></a>
+      <ol class="indicator"></ol>
+    </div>
+
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
+  <script type="text/javascript">
+    function set_description(index, slide) {
+      var text = this.list[index].getAttribute('data-description')
+      var node = this.container.find('.description')
+      console.log(text)
+      console.log(node)
+      node.empty()
+      if (text) {
+        node[0].appendChild(document.createTextNode(text))
+      }
+    }
+
+    document.getElementById('gallery').onclick = function(event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement;
+      var link = target.src ? target.parentNode : target;
+      var options = {
+        index: link,
+        event: event,
+        onslide: set_description
+      }
+      var links = this.getElementsByTagName('a');
+      blueimp.Gallery(links, options);
+    }
+
+    function lightbox(event) {
+      event = event || window.event;
+      event.preventDefault();
+      var target = event.target || event.srcElement;
+      var link = target.src ? target.parentNode : target;
+      var options = {
+        index: link,
+        event: event,
+        onslide: set_description
+      }
+      var links = [this];
+      blueimp.Gallery(links, options);
+    }
+    for (const el of document.getElementsByClassName("lightbox")) {
+      el.onclick = lightbox;
+    }
+  </script>
 </html>
+
+<!--
+TODO:
+  - Booking
+  - link to Airbnb
+  - English
+-->
