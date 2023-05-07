@@ -49,6 +49,11 @@ li {
   color: #ff385c;
 }
 
+.text-justify * {
+  text-align: justify;
+  text-justify: inter-character;
+}
+
 /* WRAPPER *********************************************************************************/
 
 .container {
