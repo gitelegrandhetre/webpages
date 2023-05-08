@@ -176,13 +176,14 @@ li {
   letter-spacing: 0.25cqw;
   font-weight: 300;
   position: absolute;
-  top: 40%;
+  top: 43%;
   right: 0px;
   font-size: 2cqw;
   width: 100%;
   text-align: center;
   opacity: 0%;
   animation: fadeIn 2s ease-out 5s 1 normal forwards;
+  line-height: 4rem;
 }
 
 /* CAROUSEL SWIMMMING POOL *******************************************************************/
