@@ -120,7 +120,7 @@ li {
   letter-spacing: 0.4cqw;
 }
 
-/* CAROUSEL SLIDER-1 **************************************************************************/
+/* CAROUSEL HOUSE **************************************************************************/
 
 .slider-house .text-1 {
   font-family: "Open Sans";
@@ -152,7 +152,40 @@ li {
   100% { font-size: 6cqw; opacity: 100%; }
 }
 
-/* CAROUSEL SLIDER-2 **************************************************************************/
+/* CAROUSEL BEDROOM **************************************************************************/
+
+.slider-bedroom img {
+  opacity: 0.7;
+}
+
+.slider-bedroom .text-1 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  font-size: 4cqw;
+  width: 100%;
+  text-align: center;
+  opacity: 0%;
+  animation: fadeIn 2s ease-out 3s 1 normal forwards;
+}
+
+.slider-bedroom .text-2 {
+  font-family: "Open Sans";
+  letter-spacing: 0.25cqw;
+  font-weight: 300;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  font-size: 2cqw;
+  width: 100%;
+  text-align: center;
+  opacity: 0%;
+  animation: fadeIn 2s ease-out 5s 1 normal forwards;
+}
+
+/* CAROUSEL SWIMMMING POOL *******************************************************************/
 
 .slider-pool .text-1 {
   font-family: "Open Sans";
@@ -194,36 +227,8 @@ li {
   animation: fadeIn 2s ease-out 5s 1 normal forwards;
 }
 
-/* CAROUSEL SLIDER-3 **************************************************************************/
 
-.slider-bedroom .text-1 {
-  font-family: "Open Sans";
-  font-weight: 300;
-  position: absolute;
-  top: 20%;
-  right: 0px;
-  font-size: 4cqw;
-  width: 100%;
-  text-align: center;
-  opacity: 0%;
-  animation: fadeIn 2s ease-out 3s 1 normal forwards;
-}
-
-.slider-bedroom .text-2 {
-  font-family: "Open Sans";
-  letter-spacing: 0.25cqw;
-  font-weight: 300;
-  position: absolute;
-  top: 30%;
-  right: 0px;
-  font-size: 2cqw;
-  width: 100%;
-  text-align: center;
-  opacity: 0%;
-  animation: fadeIn 2s ease-out 5s 1 normal forwards;
-}
-
-/* CAROUSEL SLIDER-4 **************************************************************************/
+/* CAROUSEL KITCHEN **************************************************************************/
 
 .slider-kitchen .text-1 {
   font-family: "Open Sans";
@@ -238,7 +243,7 @@ li {
   animation: fadeIn 1s ease-out 3s 1 normal forwards;
 }
 
-/* CAROUSEL SLIDER-5 **************************************************************************/
+/* CAROUSEL LOUNGE **************************************************************************/
 
 .slider-lounge img {
   opacity: 0.7;
