@@ -283,6 +283,41 @@ li {
   100% { right: 0px;    opacity: 100%; }
 }
 
+/* CAROUSEL BILLARD **************************************************************************/
+
+.slider-billard .text-1 {
+  font-family: "Open Sans";
+  letter-spacing: 0.2cqw;
+  font-weight: 400;
+  position: absolute;
+  bottom: 23%;
+  left: 0px;
+  font-size: 3cqw;
+  width: 49%;
+  text-align: right;
+}
+
+.slider-billard .text-2 {
+  font-family: "Merriweather";
+  letter-spacing: 0.15cqw;
+  font-style: italic;
+  font-weight: 300;
+  position: absolute;
+  bottom: 23%;
+  right: 0px;
+  font-size: 3cqw;
+  width: 49%;
+  text-align: left;
+  opacity: 0%;
+  animation: slider-lounge-text-2 1s ease-out 4s 1 normal forwards;
+}
+@keyframes slider-lounge-text-2{
+  0%   { right: -400px; opacity: 0%;   }
+  50%  {                opacity: 0%;   }
+  100% { right: 0px;    opacity: 100%; }
+}
+
+
 /* DESCRIPTION & DETAILS **********************************************************************/
 
 #description, #description *,
