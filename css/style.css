@@ -372,9 +372,21 @@ h1 {
   font-weight: 300;
 }
 
-#airbnb .logo {
-  border-radius : 100px;
-  width: 8rem;
+#airbnb-button {
+  display: inline-block;
+  height: 60px;
+  width: 161px;
+  margin: auto;
+  background: url(../images/airbnb-logo.jpg?v=1);
+  border-radius: 15px;
+}
+
+#airbnb-button:hover {
+  background: url(../images/airbnb-logo-hover.jpg);
+}
+
+#airbnb-button:active {
+  background: url(../images/airbnb-logo-hover.jpg);
 }
 
 /* ROOM CARDS *********************************************************************************/
