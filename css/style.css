@@ -350,11 +350,33 @@ h1 {
   font-size: 2.2rem;
 }
 
-#email {
-  font-size: 1.5rem;
-}
 #email a {
   text-decoration: none;
+}
+
+#map {
+  position: relative;
+}
+
+#smap {
+  z-index: 10;
+  width: 100%;
+}
+
+#gmap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+#address {
+  border-left: 1px solid black;
+  margin-left: 3rem;
 }
 
 /* AIRBNB ************************************************************************************/
@@ -404,8 +426,8 @@ h1 {
 }
 
 #rooms .card-body h1 {
-  font-size: 1.67rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 300;
   color: #444;
 }
 
