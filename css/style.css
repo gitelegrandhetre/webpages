@@ -375,8 +375,8 @@ h1 {
 }
 
 #address {
-  border-left: 1px solid black;
-  margin-left: 3rem;
+  margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
 /* AIRBNB ************************************************************************************/
