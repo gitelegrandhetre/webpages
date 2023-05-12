@@ -288,6 +288,20 @@ li {
   100% { right: 0px;    opacity: 100%; }
 }
 
+.slider-lounge .text-3 {
+  font-family: "Open Sans";
+  letter-spacing: 0.2cqw;
+  font-weight: 400;
+  position: absolute;
+  bottom: 23%;
+  left: 50%;
+  font-size: 3cqw;
+  width: 38%;
+  text-align: right;
+  opacity: 0%;
+  animation: fadeIn 1s ease-out 3s 1 normal forwards;
+}
+
 /* CAROUSEL BILLARD **************************************************************************/
 
 .slider-billard .text-1 {
@@ -311,7 +325,7 @@ li {
   bottom: 23%;
   right: 0px;
   font-size: 3cqw;
-  width: 49%;
+  width: 48%;
   text-align: left;
   opacity: 0%;
   animation: slider-lounge-text-2 2s ease-out 1s 1 normal forwards;
@@ -320,6 +334,18 @@ li {
   0%   { opacity: 0%;   font-size: 100cqw; }
   75%  { opacity: 0%;                      }
   100% { opacity: 100%; font-size: 3cqw;   }
+}
+
+.slider-billard .text-3 {
+  font-family: "Open Sans";
+  letter-spacing: 0.2cqw;
+  font-weight: 400;
+  position: absolute;
+  bottom: 23%;
+  left: 50%;
+  font-size: 3cqw;
+  width: 38%;
+  text-align: right;
 }
 
 
