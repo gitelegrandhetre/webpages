@@ -89,6 +89,10 @@ li {
   color:#000000;
 }
 
+#flags img {
+  height: 32px;
+}
+
 /* CAROUSEL *********************************************************************************/
 
 /* change transition duration to control the speed of fade effect */
