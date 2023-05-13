@@ -2,9 +2,7 @@
 # 	- sudo dnf install uglify-js ImageMagick
 # 	- pip install --user htmlmin cssmin
 
-.PHONY: copy_files minify_all optimize_images
-
-all: copy_files minify_all optimize_images
+all: icon js html css
 
 define remove_files
     @rm -fv $(1) | tr -d \' | sed 's/^removed/ RM/'
@@ -18,35 +16,32 @@ endef
 ###############################################################################
 #### FILE COPY ################################################################
 ###############################################################################
-
-copy_files:
+.PHONY:icon 
+icon:
 	$(call copy_files, favicon.ico, html/)
-	$(call copy_files, -r, css, html/)
-	$(call copy_files, -r, js, html/)
-	$(call copy_files, -r, images, html/)
-	$(call copy_files, -r, img, html/)
+
 
 ###############################################################################
 #### MINIFICATION #############################################################
 ###############################################################################
 
-.PHONY: uglify_js minify_html minify_css
+.PHONY: all js html css
 
-minify_all: uglify_js minify_html minify_css
-
-uglify_js: js/site.js
+js: js/site.js
+	$(call copy_files, -r, js, html/)
 	$(call remove_files, html/$<)
 	@echo "UGL $< -> ${<:.js=.min.js}"
 	@uglifyjs $< -o html/${<:.js=.min.js} --compress --mangle --validate --warn
 
-minify_css: css/style.css
+css: css/style.css
+	$(call copy_files, -r, css, html/)
 	$(call remove_files, html/$<)
 	@echo "MIN $< -> ${<:.css=.min.css}"
 	@cssmin < $< > html/${<:.css=.min.css}
 
-minify_html:
-minify_html: index-fr.html index-en.html
-	@echo "MIN index.html -> html/fr/index.html"
+html:
+html: index-fr.html index-en.html
+	@echo "MIN index.html -> html/index.html"
 	@htmlmin --remove-empty-space --remove-comments index.html html/index.html
 
 	@echo "MIN index-fr.html -> html/fr/index.html"
@@ -60,5 +55,8 @@ minify_html: index-fr.html index-en.html
 #### IMAGE COMPRESSION ########################################################
 ###############################################################################
 
-optimize_images:
+.PHONY: images
+images:
+	$(call copy_files, -r, images, html/)
+	$(call copy_files, -r, img, html/)
 	@find html/images -print -type f -exec mogrify -quality 40% '{}' \; | sed 's/^/OPT /'
