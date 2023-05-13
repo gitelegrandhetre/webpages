@@ -166,6 +166,7 @@
           <div class="col-md-3"></div>
           <div class="col-md-6">
             <form id="form" class="needs-validation" action="https://formspree.io/f/xknayaep" accept-charset="utf-8" method="POST" novalidate>
+              <input type="hidden" name="Langue" value="Anglais" />
               <div class="col mb-3 position-relative">
                 <label for="name" class="form-label">Your name</label>
                 <input type="text" name="Nom" class="form-control" id="name" placeholder="first & last name" required>
@@ -181,9 +182,9 @@
                 <label for="mail" class="form-label">Your request</label>
                 <select class="form-select" aria-label="Default select example" name="Sujet" id="department" required>
                   <option value="" disabled selected>Please pick an option...</option>
-                  <option value="Réservations (en anglais)">Booking</option>
-                  <option value="Logement (en anglais)">Question related to the accomodation</option>
-                  <option value="Facturation (en-anglais)">Billing</option>
+                  <option value="Réservations">Booking</option>
+                  <option value="Logement">Question related to the accomodation</option>
+                  <option value="Facturation">Billing</option>
                 </select>
               </div>
               <div class="cold mb-3 position-relative">
@@ -194,7 +195,6 @@
                 <div class="form-text">Input your message here. For a booking please indicate the desired date, duration and number of people.</div>
                 <div class="invalid-tooltip">Your message can't be empty</div>
               </div>
-              <input type="hidden" name="Langue" value="Anglais" />
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
           </div>
