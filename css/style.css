@@ -16,8 +16,8 @@ i.fa-solid, i.fa-regular {
 /* HTML, BODY, GENERAL ************************************************************************/
 
 html, body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -60,13 +60,13 @@ li {
 #content {
   min-height: 100%;
   background: #ffffff;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* This fixes the padding 0px on #content (every top-level row has a negative margin */
+/* This fixes the padding 0 on #content (every top-level row has a negative margin */
 #content .row {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 /* HEADER *********************************************************************************/
@@ -117,7 +117,7 @@ li {
 .slider img {
   background-position: center;
   background-size: cover;
-  opacity: 75%;
+  opacity: 0.75;
 }
 
 .slider .text {
@@ -133,11 +133,11 @@ li {
   font-weight: 300;
   position: absolute;
   top: 25%;
-  right: 0px;
+  right: 0;
   font-size: 4.2cqw;
   width: 47%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 1s ease-out 1.5s 1 normal forwards;
 }
 
@@ -148,7 +148,7 @@ li {
   width: 100%;
   bottom: 30%;
   font-size: 0cqw;
-  left: 0px;
+  left: 0;
   animation: slider-house-text-2 2s ease-out 1.5s 1 normal forwards;
 }
 
@@ -169,11 +169,11 @@ li {
   font-weight: 300;
   position: absolute;
   top: 30%;
-  right: 0px;
+  right: 0;
   font-size: 4cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 2s ease-out 3s 1 normal forwards;
 }
 
@@ -183,11 +183,11 @@ li {
   font-weight: 300;
   position: absolute;
   top: 43%;
-  right: 0px;
+  right: 0;
   font-size: 2cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 2s ease-out 5s 1 normal forwards;
   line-height: 4rem;
 }
@@ -199,11 +199,11 @@ li {
   font-weight: 300;
   position: absolute;
   top: 40%;
-  right: 0px;
+  right: 0;
   font-size: 3cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 1s ease-out 2s 1 normal forwards;
 }
 
@@ -212,11 +212,11 @@ li {
   font-weight: 300;
   position: absolute;
   bottom: 30%;
-  right: 0px;
+  right: 0;
   font-size: 6cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 3s ease-out 3s 1 normal forwards;
 }
 
@@ -226,11 +226,11 @@ li {
   font-weight: 300;
   position: absolute;
   bottom: 22%;
-  right: 0px;
+  right: 0;
   font-size: 2cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 2s ease-out 5s 1 normal forwards;
 }
 
@@ -242,11 +242,11 @@ li {
   font-weight: 300;
   position: absolute;
   bottom: 20%;
-  right: 0px;
+  right: 0;
   font-size: 5cqw;
   width: 100%;
   text-align: center;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 1s ease-out 3s 1 normal forwards;
 }
 
@@ -262,11 +262,11 @@ li {
   font-weight: 400;
   position: absolute;
   bottom: 23%;
-  left: 0px;
+  left: 0;
   font-size: 3cqw;
   width: 49%;
   text-align: right;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 1s ease-out 3s 1 normal forwards;
 }
 
@@ -277,17 +277,17 @@ li {
   font-weight: 300;
   position: absolute;
   bottom: 23%;
-  right: 0px;
+  right: 0;
   font-size: 3cqw;
   width: 49%;
   text-align: left;
-  opacity: 0%;
+  opacity: 0.0;
   animation: slider-lounge-text-2 1s ease-out 4s 1 normal forwards;
 }
 @keyframes slider-lounge-text-2{
   0%   { right: -400px; opacity: 0.0;   }
   50%  {                opacity: 0.0;   }
-  100% { right: 0px;    opacity: 1.0; }
+  100% { right: 0;    opacity: 1.0; }
 }
 
 .slider-lounge .text-3 {
@@ -300,7 +300,7 @@ li {
   font-size: 3cqw;
   width: 38%;
   text-align: right;
-  opacity: 0%;
+  opacity: 0.0;
   animation: fadeIn 1s ease-out 3s 1 normal forwards;
 }
 
@@ -312,7 +312,7 @@ li {
   font-weight: 400;
   position: absolute;
   bottom: 23%;
-  left: 0px;
+  left: 0;
   font-size: 3cqw;
   width: 49%;
   text-align: right;
@@ -325,11 +325,11 @@ li {
   font-weight: 300;
   position: absolute;
   bottom: 23%;
-  right: 0px;
+  right: 0;
   font-size: 3cqw;
   width: 48%;
   text-align: left;
-  opacity: 0%;
+  opacity: 0.0;
   animation: slider-lounge-text-2 2s ease-out 1s 1 normal forwards;
 }
 @keyframes slider-lounge-text-2{
@@ -397,10 +397,10 @@ h1 {
 
 #gmap {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: -1000;
@@ -450,7 +450,7 @@ h1 {
 }
 
 .card img {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 #rooms .card-body * {
@@ -468,14 +468,13 @@ h1 {
 #blueimp-gallery .description {
   position: absolute;
   text-align: center;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   line-height: 60px;
   font-size: 1.2rem;
   font-family: "Merriweather";
   width: 100%;
   color: #fff;
-  display: none;
   background: rgba(0,0,0,0.5);
   display: block;
 }
@@ -483,7 +482,7 @@ h1 {
 /* FOOTER *********************************************************************************/
 
 #footer {
-  bottom: 0px;
+  bottom: 0;
   background: #e8e8e8;
   line-height: 5rem;
   text-align: center;
