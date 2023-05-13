@@ -4,7 +4,7 @@
 
 .PHONY: copy_files minify_all optimize_images
 
-all: copy_files minify_all optimize_images 
+all: copy_files minify_all optimize_images
 
 define remove_files
     @rm -fv $(1) | tr -d \' | sed 's/^removed/ RM/'
