@@ -21,7 +21,6 @@ endef
 
 copy_files:
 	$(call copy_files, favicon.ico, html/)
-	$(call copy_files, index.html, html/)
 	$(call copy_files, -r, css, html/)
 	$(call copy_files, -r, js, html/)
 	$(call copy_files, -r, images, html/)
@@ -47,8 +46,12 @@ minify_css: css/style.css
 
 minify_html:
 minify_html: index-fr.html index-en.html
+	@echo "MIN index.html -> html/fr/index.html"
+	@htmlmin --remove-empty-space --remove-comments index.html html/index.html
+
 	@echo "MIN index-fr.html -> html/fr/index.html"
 	@htmlmin --remove-empty-space --remove-comments index-fr.html html/fr/index.html
+
 	@echo "MIN index-en.html -> html/en/index.html"
 	@htmlmin --remove-empty-space --remove-comments index-en.html html/en/index.html
 
