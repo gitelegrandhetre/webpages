@@ -3,8 +3,8 @@
 }
 
 @keyframes fadeIn {
-  0%   { opacity: 0%;   }
-  100% { opacity: 100%; }
+  0%   { opacity: 0.0;   }
+  100% { opacity: 1.0; }
 }
 
 /* FONTAWESOME *********************************************************************************/
@@ -153,9 +153,9 @@ li {
 }
 
 @keyframes slider-house-text-2 {
-  0%   { font-size: 0cqw; opacity: 0%;   }
-  75%  { font-size: 0cqw; opacity: 25%;  }
-  100% { font-size: 6cqw; opacity: 100%; }
+  0%   { font-size: 0cqw; opacity: 0.0;   }
+  75%  { font-size: 0cqw; opacity: 0.25;  }
+  100% { font-size: 6cqw; opacity: 1.0; }
 }
 
 /* CAROUSEL BEDROOM **************************************************************************/
@@ -285,9 +285,9 @@ li {
   animation: slider-lounge-text-2 1s ease-out 4s 1 normal forwards;
 }
 @keyframes slider-lounge-text-2{
-  0%   { right: -400px; opacity: 0%;   }
-  50%  {                opacity: 0%;   }
-  100% { right: 0px;    opacity: 100%; }
+  0%   { right: -400px; opacity: 0.0;   }
+  50%  {                opacity: 0.0;   }
+  100% { right: 0px;    opacity: 1.0; }
 }
 
 .slider-lounge .text-3 {
@@ -333,9 +333,9 @@ li {
   animation: slider-lounge-text-2 2s ease-out 1s 1 normal forwards;
 }
 @keyframes slider-lounge-text-2{
-  0%   { opacity: 0%;   font-size: 100cqw; }
-  75%  { opacity: 0%;                      }
-  100% { opacity: 100%; font-size: 3cqw;   }
+  0%   { opacity: 0.0;   font-size: 100cqw; }
+  75%  { opacity: 0.0;                      }
+  100% { opacity: 1.0; font-size: 3cqw;   }
 }
 
 .slider-billard .text-3 {
