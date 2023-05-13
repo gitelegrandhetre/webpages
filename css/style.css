@@ -10,7 +10,7 @@
 /* FONTAWESOME *********************************************************************************/
 
 i.fa-solid, i.fa-regular {
-  font-family: 'Font Awesome 5 Free' !important;
+  font-family: 'Font Awesome 5 Free';
 }
 
 /* HTML, BODY, GENERAL ************************************************************************/
@@ -446,7 +446,7 @@ h1 {
 /* ROOM CARDS *********************************************************************************/
 
 .card {
-  border: none !important;
+  border: none;
 }
 
 .card img {
