@@ -19,6 +19,7 @@ endef
 .PHONY:icon 
 icon:
 	$(call copy_files, favicon.ico, html/)
+	$(call copy_files, sitemap.xml, html/)
 
 
 ###############################################################################
