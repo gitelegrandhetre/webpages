@@ -9,8 +9,8 @@
 
 /* FONTAWESOME *********************************************************************************/
 
-i.fa-solid, i.fa-regular {
-  font-family: 'Font Awesome 5 Free';
+.fa-solid, .fa-regular {
+  font-family: 'Font Awesome 5 Free' !important;
 }
 
 /* HTML, BODY, GENERAL ************************************************************************/
@@ -19,22 +19,27 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Merriweather";
 }
 
 body {
   background: #ffffff;
   background-image: url(../images/bg-pattern.png);
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Merriweather";
   font-weight: 300;
   color: #444;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; font-weight: 400;}
-h3 { font-size: 1.5rem; border-bottom: 1px solid #aaa;}
+h1 { font-size: 2.5rem; text-align: center; }
+h2 { font-size: 2.0rem; font-weight: 400;}
+h3 { font-size: 1.7rem; border-bottom: 1px solid #aaa;}
+
+@media (min-width: 768px) {
+  h1 { font-size: 3.0rem; }
+}
 
 li {
   list-style-type: disc;
@@ -77,7 +82,6 @@ li {
 }
 
 #header div {
-  font-family: "Merriweather";
   font-weight:400;
   font-size:18px;
   letter-spacing:0.1cqw;
@@ -143,7 +147,6 @@ li {
 }
 
 .slider-house .text-2 {
-  font-family: "Merriweather";
   font-weight: 500;
   text-align: center;
   width: 100%;
@@ -222,7 +225,6 @@ li {
 }
 
 .slider-pool .text-3 {
-  font-family: "Merriweather";
   font-style: italic;
   font-weight: 300;
   position: absolute;
@@ -272,7 +274,6 @@ li {
 }
 
 .slider-lounge .text-2 {
-  font-family: "Merriweather";
   letter-spacing: 0.15cqw;
   font-style: italic;
   font-weight: 300;
@@ -320,7 +321,6 @@ li {
 }
 
 .slider-billard .text-2 {
-  font-family: "Merriweather";
   letter-spacing: 0.15cqw;
   font-style: italic;
   font-weight: 300;
@@ -354,24 +354,23 @@ li {
 
 /* DESCRIPTION & DETAILS **********************************************************************/
 
-#description, #description *,
-#details, #details * {
-  font-family: "Merriweather";
+.drop-capital {
+  line-height: var(--bs-body-line-height);
+}
+
+.drop-capital:first-letter {
+  line-height: calc(var(--bs-body-line-height) / 2);
+  float: left;
+  font-size: calc(var(--bs-body-font-size) * 4);
+  padding-right: 0.2rem;
+  position: fixed;
 }
 
 #description, #details {
   font-size: 1.1rem;
 }
 
-h1 {
-  text-align: center;
-}
-
 /* CONTACT ************************************************************************************/
-
-#contact, #contact * {
-  font-family: "Merriweather";
-}
 
 #contact {
   background-color: #eee;
@@ -380,7 +379,7 @@ h1 {
 #contact h2 {
   text-align: center;
   font-weight: 300;
-  font-size: 2.2rem;
+  _ont-size: 2.2rem;
 }
 
 #email a {
@@ -414,17 +413,8 @@ h1 {
 
 /* AIRBNB ************************************************************************************/
 
-#airbnb, #airbnb * {
-  font-family: "Merriweather";
-}
-
 #airbnb {
   background-color: #eee;
-}
-
-#airbnb h2 {
-  text-align: center;
-  font-weight: 300;
 }
 
 #airbnb-button {
@@ -454,14 +444,11 @@ h1 {
   border-radius: 0;
 }
 
-#rooms .card-body * {
-  font-family: "Merriweather";
-}
-
 #rooms .card-body h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #444;
+  font-weight: bold;
 }
 
 /* LIGHTBOX *********************************************************************************/
@@ -473,7 +460,6 @@ h1 {
   left: 0;
   line-height: 60px;
   font-size: 1.2rem;
-  font-family: "Merriweather";
   width: 100%;
   color: #fff;
   background: rgba(0,0,0,0.5);
@@ -488,5 +474,4 @@ h1 {
   line-height: 5rem;
   text-align: center;
   color: #888;
-  font-family: "Merriweather";
 }
