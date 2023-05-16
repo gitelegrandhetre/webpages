@@ -20,6 +20,7 @@ endef
 icon:
 	$(call copy_files, favicon.ico, html/)
 	$(call copy_files, sitemap.xml, html/)
+	$(call copy_files, robots.txt, html/)
 
 
 ###############################################################################
