@@ -61,4 +61,5 @@ html: index-fr.html index-en.html
 images:
 	$(call copy_files, -r, images, html/)
 	$(call copy_files, -r, img, html/)
+	@rm html/images/make_thumb.sh
 	@find html/images -print -type f -exec mogrify -quality 40% '{}' \; | sed 's/^/OPT /'
